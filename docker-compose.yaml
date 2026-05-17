@@ -6,6 +6,7 @@ services:
 
     image: ghcr.io/beecave-homelab/insanely-fast-whisper-rocm:main
     container_name: insanely-fast-whisper-rocm
+    user: "1000:1000"
     restart: unless-stopped
 
     # To allow AMD GPU access:
